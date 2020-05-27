@@ -1,0 +1,41 @@
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+.container {
+  border: 10px solid rgb(0, 255, 64);
+  width: 550px;
+}
+li {
+  list-style: none;
+}
+.countryName {
+  font-size: larger;
+  color: greenyellow;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.playerScore {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(200, 255, 0);
+}
+.countryTable {
+  border: 10px solid rgb(0, 204, 255);
+  margin-bottom: 30px;
+  margin-right: 32px;
+}
+.boardTitle {
+  font-size: 50px;
+  font-weight: 300;
+  color: rgb(92, 47, 255);
+}
+.playerName {
+  color: rgb(21, 128, 0);
+  text-align: center;
+}
