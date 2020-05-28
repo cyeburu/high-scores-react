@@ -31,9 +31,10 @@ li {
   margin-right: 32px;
 }
 .boardTitle {
-  font-size: 50px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 600;
   color: rgb(92, 47, 255);
+  text-align: center;
 }
 .playerName {
   color: rgb(21, 128, 0);
