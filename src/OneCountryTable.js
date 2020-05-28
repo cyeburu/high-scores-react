@@ -9,9 +9,9 @@ function OneCountryTable(props) {
 
                 {props.countryScores.map((playerAndScore, index) => {
                     return (
-                        <div className="playerScore">
-                            <span className="playerName" key={index}> {playerAndScore.n} </span>
-                            <span className="playerScore" key={index}> {playerAndScore.s}</span>
+                        <div className="playerScore" key={index}>
+                            <span className="playerName" > {playerAndScore.n} </span>
+                            <span className="playerScore" > {playerAndScore.s}</span>
                         </div>
                     )
                 })}

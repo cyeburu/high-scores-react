@@ -3,11 +3,11 @@ import ScoreData from './ScoreData.js';
 import ScoresTable from "./ScoresTable.js";
 
 
-function PlayerScores() {
+function PlayerScore() {
     let playersScores = ScoreData[1];
     return (<div>
         <ScoresTable scores={playersScores} />
     </div>
     )
 }
-export default PlayerScores;
+export default PlayerScore;

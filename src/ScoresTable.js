@@ -5,6 +5,9 @@ import OneCountryTable from "./OneCountryTable"
 function ScoresTable(props) {
     return (
         <div className="container">
+            <p className="boardTitle">
+                High Scores Per Country
+           </p>
             <ul> {props.list.map((country, index) => {
                 return (
                     <OneCountryTable countryName={country.name} countryScores={country.scores} key={index} />
