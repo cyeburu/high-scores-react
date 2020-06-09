@@ -1,27 +1,15 @@
-import React, { useState } from "react"
-import ScoresTable from "./ScoresTable"
+import React from "react"
+
 
 const SearchButton = (props) => {
-    const [toggleSearch, setToggleSearch] = useState([])
-
     function handleToggle() {
-        setToggleSearch()
+        props.setToggle(!props.toggle)
     }
-    const list = ["time", "money", "ego"];
-
-
 
     return (
-        <select className="selectButton" >
-            <option>{list}</option>
-            <option>money</option>
-            onClick ={}
-
-
-        </select>
-
+        <button className="selectButton" onClick={handleToggle} >
+            Sort
+        </button >
     )
 }
-
-
 export default SearchButton;
