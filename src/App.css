@@ -6,9 +6,10 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
-.container {
-  border: 10px solid rgb(0, 255, 64);
-  width: 550px;
+.row {
+  border: 5px solid rgb(0, 255, 64);
+  width: 650px;
+  margin-top: 80px;
 }
 li {
   list-style: none;
@@ -39,4 +40,10 @@ li {
 .playerName {
   color: rgb(21, 128, 0);
   text-align: center;
+}
+.selectButton {
+  width: 170px;
+  height: 40px;
+  margin-left: 230px;
+  margin-top: 30px;
 }

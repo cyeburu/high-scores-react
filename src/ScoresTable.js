@@ -5,15 +5,18 @@ import OneCountryTable from "./OneCountryTable"
 function ScoresTable(props) {
     return (
         <div className="container">
-            <p className="boardTitle">
-                High Scores Per Country
+
+            <div className="row">
+                <p className="boardTitle">
+                    High Scores Per Country
            </p>
-            <ul> {props.list.map((country, index) => {
-                return (
-                    <OneCountryTable countryName={country.name} countryScores={country.scores} key={index} />
-                )
-            })}
-            </ul>
+                <ul>{props.scoreBoardData.sort((a, b) => a.name < b.name ? -1 : 1).map((country, index) => {
+                    return (
+                        <OneCountryTable countryName={country.name} countryScores={country.scores} key={index} />
+                    )
+                })}
+                </ul>
+            </div>
         </div>
     )
 }

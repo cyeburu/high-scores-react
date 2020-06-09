@@ -3,12 +3,14 @@ import ScoreData from './ScoreData.js';
 import ScoresTable from "./ScoresTable.js";
 
 
-const CountryScores = () => {
-    let listItems = ScoreData
+function CountryScores() {
+
+
     return (
         <div>
-            <ScoresTable list={listItems} />
+            <ScoresTable scoreBoardData={ScoreData} />
+
         </div>
     )
 }
-export default CountryScores;
+export default CountryScores; 
